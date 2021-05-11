@@ -24,8 +24,6 @@
     "noUnusedParameters": true,
     "incremental": true,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "dist/src",
-    "rootDir": "./",
   },
   "include": [
     "src/**/*"
