@@ -9,7 +9,7 @@ export const SCOPES =
 export const SERVER_ROOT_URI =
   process.env.SERVER_ROOT_URI || "http://localhost:4000";
 export const CLIENT_ROOT_URI =
-  process.env.CLIENT_ROOT_URI || "http://localhost:3000";
+  process.env.CLIENT_ROOT_URI || "http://localhost:4000";
 export const REDIRECT_URI = process.env.REDIRECT_URI || "auth/google";
 
 export const JWT_SECRET = process.env.JWT_SECRET || "sheets";
