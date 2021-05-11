@@ -3,7 +3,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "node dist/src/server.js",
-    "postinstall": "tsc",
+    "postinstall": "tsc && npm run build",
+    "build": "cd client && npm install --legacy-peer-deps && npm run build",
     "watch-node": "nodemon dist/src/server.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push origin master"
