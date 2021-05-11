@@ -1,9 +1,8 @@
 import express from "express";
 import cors from "cors";
 import routes from "./routes";
-import { CLIENT_ROOT_URI } from "./config/config";
+import { CLIENT_ROOT_URI, PORT } from "./config/config";
 import cookieParser from "cookie-parser";
-const port = 4000;
 
 const app = express();
 // cors policy allow front origin
@@ -19,6 +18,6 @@ app.use(
 app.use(cookieParser());
 // all available routes
 routes(app);
-app.listen(port, () => {
-  console.log(`App listening on port : ${port}`);
+app.listen(PORT, () => {
+  console.log(`App listening on port : ${PORT}`);
 });

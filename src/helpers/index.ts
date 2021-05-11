@@ -60,7 +60,6 @@ export function getTokens({
     .then((res) => res.data)
     .catch((error) => {
       console.error(`Failed to fetch auth tokens`);
-      console.log(error);
     });
 }
 
