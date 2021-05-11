@@ -40,6 +40,7 @@ export const getUserToken = async (req: any, res: any) => {
     const token = jwt.sign(JSON.stringify(tokenObject), JWT_SECRET);
 
     res.cookie(COOKIE_NAME, token, {
+      path: "/",
       maxAge: 900000,
       httpOnly: process.env.NODE_ENV === "production" ? true : false,
       secure: process.env.NODE_ENV === "production" ? true : false,
